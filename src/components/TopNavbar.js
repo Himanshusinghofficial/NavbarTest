@@ -18,7 +18,7 @@ const TopNavbar = () => {
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <div className="container">
-  <Navbar.Brand href="/NavbarTest/">Vibe</Navbar.Brand>
+  <Navbar.Brand href="#">Vibe</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{border: 'none', outline:'none'}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -55,7 +55,19 @@ return (
     </div>
       </NavDropdown>
       <Nav.Link href="https://web.whatsapp.com/" target="_blank">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
-      <Nav.Link href="/NavbarTest/helpsection">Help</Nav.Link>
+      <NavDropdown title="Help" id="collasible-nav-dropdown">
+      <div className="container" style={{marginTop:'20px'}}>
+           <h5 style={{textAlign:'center'}}>
+           <u>Reach Out to Us</u>
+           </h5>
+           <div class="Details">
+           <div><b>Details</b></div>
+           <i class="fas fa-envelope fa-lg"></i><span>&ensp;Email: hs882677@gmail.com</span><br/>
+           <br/>
+           <i class="fas fa-mobile-alt fa-lg"></i><span>&ensp;&ensp;Phone: 8810428050</span>
+           </div>
+        </div>
+      </NavDropdown>
     </Nav>
   </Navbar.Collapse>
   </div>
