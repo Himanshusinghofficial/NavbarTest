@@ -32,7 +32,7 @@ const TopNavbar = () => {
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <div className="container">
-  <Navbar.Brand href="/home">Vibe</Navbar.Brand>
+  <Navbar.Brand href="#">Vibe</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{border: 'none', outline:'none'}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -69,7 +69,7 @@ return (
     <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Send Feedback</Button>
     </div>
       </NavDropdown>
-      <Nav.Link href="/whatsapp">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
+      <Nav.Link href="#">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
       <Nav.Link href="/Help">Help</Nav.Link>
     </Nav>
   </Navbar.Collapse>
