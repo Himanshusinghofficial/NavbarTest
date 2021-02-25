@@ -1,11 +1,18 @@
 import React,{Fragment} from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import TopNavbar from './components/TopNavbar';
+import Help from './components/Help'
 
 const App = () => {
   return (
-   <Fragment>
-     <TopNavbar />
-   </Fragment>
+    <Router>
+    <Fragment>
+      <TopNavbar />
+        <Switch>
+          <Route exact path='/help' component={Help} />
+        </Switch>
+    </Fragment>
+</Router>
   )
 }
 
