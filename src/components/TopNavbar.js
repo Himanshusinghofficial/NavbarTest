@@ -70,7 +70,7 @@ return (
     </div>
       </NavDropdown>
       <Nav.Link href="/whatsapp">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
-      <Nav.Link href="/help">Help</Nav.Link>
+      <Nav.Link href="/Help">Help</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </div>
