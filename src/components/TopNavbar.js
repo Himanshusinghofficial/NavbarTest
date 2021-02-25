@@ -2,20 +2,7 @@ import React from 'react'
 import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
-import Box from '@material-ui/core/Box';
-
-const labels = {
-  0.5: 'Useless',
-  1: 'Useless+',
-  1.5: 'Poor',
-  2: 'Poor+',
-  2.5: 'Ok',
-  3: 'Ok+',
-  3.5: 'Good',
-  4: 'Good+',
-  4.5: 'Excellent',
-  5: 'Excellent+',
-};
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 const useStyles = makeStyles({
   root: {
@@ -26,8 +13,7 @@ const useStyles = makeStyles({
 });
 
 const TopNavbar = () => {
-  const [value, setValue] = React.useState(2);
-  const [hover, setHover] = React.useState(-1);
+  const [value, setValue] = React.useState(0);
   const classes = useStyles();
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -54,23 +40,22 @@ return (
       <Rating
         name="hover-feedback"
         value={value}
-        precision={0.5}
+        precision={1}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-        onChangeActive={(event, newHover) => {
-          setHover(newHover);
-        }}
+        size="large"
       />
-      {value !== null && <Box ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
     </div>
-    <label>(optional)</label>
-    <input class="form-control mr-sm-2" type="text" placeholder="share your feedback" aria-label="text"></input>
-    <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Send Feedback</Button>
+    {value > 0 ? <>
+    <label>(optional)</label><br/>
+     <TextareaAutosize aria-label="empty textarea" placeholder="share your feedback" style={{padding:'5px 100px 5px 5px'}} /><br/>
+      </> : " "}
+    <button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Send Feedback</button>
     </div>
       </NavDropdown>
       <Nav.Link href="#">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
-      <Nav.Link href="/needhelp">Help</Nav.Link>
+      <Nav.Link href="/helpsection">Help</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </div>

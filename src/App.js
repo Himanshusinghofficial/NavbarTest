@@ -9,7 +9,7 @@ const App = () => {
     <Fragment>
       <TopNavbar />
         <Switch>
-          <Route exact path='/needhelp' component={Help} />
+          <Route exact path='/helpsection' component={Help} />
         </Switch>
     </Fragment>
 </Router>
