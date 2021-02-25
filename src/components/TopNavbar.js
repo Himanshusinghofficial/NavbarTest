@@ -18,7 +18,7 @@ const TopNavbar = () => {
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <div className="container">
-  <Navbar.Brand href="/">Vibe</Navbar.Brand>
+  <Navbar.Brand href="/NavbarTest/">Vibe</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{border: 'none', outline:'none'}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -27,9 +27,9 @@ return (
       <NavDropdown title="Sign In" id="collasible-nav-dropdown">
         <form class="form-inline my-2 my-lg-0" style={{margin:'0px 20px 0px 20px'}}>
             <label>Email</label>
-            <input class="form-control mr-sm-2" type="search" placeholder="Enter Email" aria-label="Email"></input>
+            <input class="form-control mr-sm-2" type="email" placeholder="Enter Email" aria-label="Email"></input>
             <label>Password</label>
-            <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Password"></input>
+            <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password"></input>
             <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Sign In</Button>
        </form>
       </NavDropdown>
@@ -55,7 +55,7 @@ return (
     </div>
       </NavDropdown>
       <Nav.Link href="https://web.whatsapp.com/" target="_blank">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
-      <Nav.Link href="/helpsection">Help</Nav.Link>
+      <Nav.Link href="/NavbarTest/helpsection">Help</Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </div>
