@@ -1,5 +1,5 @@
-import React from 'react'
-import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
+import React from 'react';
+import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
@@ -18,7 +18,7 @@ const TopNavbar = () => {
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
 <div className="container">
-  <Navbar.Brand href="#">Vibe</Navbar.Brand>
+  <Navbar.Brand href="/">Vibe</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" style={{border: 'none', outline:'none'}}/>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
@@ -54,7 +54,7 @@ return (
     <button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Send Feedback</button>
     </div>
       </NavDropdown>
-      <Nav.Link href="#">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
+      <Nav.Link href="https://web.whatsapp.com/" target="_blank">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
       <Nav.Link href="/helpsection">Help</Nav.Link>
     </Nav>
   </Navbar.Collapse>
