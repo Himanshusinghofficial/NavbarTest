@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/NavbarTest/static/js/main.4edae8d8.chunk.js",
-    "main.js.map": "/NavbarTest/static/js/main.4edae8d8.chunk.js.map",
+    "main.js": "/NavbarTest/static/js/main.e32d56ee.chunk.js",
+    "main.js.map": "/NavbarTest/static/js/main.e32d56ee.chunk.js.map",
     "runtime-main.js": "/NavbarTest/static/js/runtime-main.85a19104.js",
     "runtime-main.js.map": "/NavbarTest/static/js/runtime-main.85a19104.js.map",
     "static/js/2.b58c4341.chunk.js": "/NavbarTest/static/js/2.b58c4341.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.85a19104.js",
     "static/js/2.b58c4341.chunk.js",
-    "static/js/main.4edae8d8.chunk.js"
+    "static/js/main.e32d56ee.chunk.js"
   ]
 }
