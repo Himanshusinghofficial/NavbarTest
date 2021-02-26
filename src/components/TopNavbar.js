@@ -24,18 +24,9 @@ return (
     <Nav className="mr-auto">
     </Nav>
     <Nav>
-      <NavDropdown title="Sign In" id="collasible-nav-dropdown">
-        <form class="form-inline my-2 my-lg-0" style={{margin:'0px 20px 0px 20px'}}>
-            <label>Email</label>
-            <input class="form-control mr-sm-2" type="email" placeholder="Enter Email" aria-label="Email"></input>
-            <label>Password</label>
-            <input class="form-control mr-sm-2" type="password" placeholder="Password" aria-label="Password"></input>
-            <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Sign In</Button>
-       </form>
-      </NavDropdown>
       <NavDropdown title="Feedback" id="collasible-nav-dropdown">
         <div style={{margin:'0px 20px 0px 20px'}}>
-        <div><b>Please let us know your experience with our website</b></div>
+        <div><b>Please rate your experience</b></div>
         <div className={classes.root}>
       <Rating
         name="hover-feedback"
@@ -48,23 +39,21 @@ return (
       />
     </div>
     {value > 0 ? <>
-    <label>(optional)</label><br/>
-     <TextareaAutosize aria-label="empty textarea" placeholder="share your feedback" style={{padding:'5px 100px 5px 5px'}} /><br/>
+    <label>please help us improve</label><br/>
+     <TextareaAutosize aria-label="empty textarea" placeholder="share your feedback" style={{marginLeft:'1px',marginTop:'2px',paddingRight:'20px'}} /><br/>
+     <input type="tel" id="phone" name="phone" placeholder="Phone(optional)" type="number" style={{ marginLeft:'1px'}}/>
+     <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginLeft:'2px'}}>Submit</Button>
       </> : " "}
-    <button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginTop:'10px' }}>Send Feedback</button>
     </div>
       </NavDropdown>
-      <Nav.Link href="https://web.whatsapp.com/" target="_blank">Share Video <i class="fab fa-whatsapp"></i></Nav.Link>
-      <NavDropdown title="Help" id="collasible-nav-dropdown">
+      <Nav.Link href="#" target="_blank"><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover">whatsapp us <i class="fab fa-whatsapp"></i></button></Nav.Link>
+      <NavDropdown title="About" id="collasible-nav-dropdown">
       <div className="container" style={{marginTop:'20px'}}>
            <h5 style={{textAlign:'center'}}>
-           <u>Reach Out to Us</u>
+           <u>About us</u>
            </h5>
            <div class="Details">
-           <div><b>Details</b></div>
-           <i class="fas fa-envelope fa-lg"></i><span>&ensp;Email: hs882677@gmail.com</span><br/>
-           <br/>
-           <i class="fas fa-mobile-alt fa-lg"></i><span>&ensp;&ensp;Phone: 8810428050</span>
+           <div>Moved to Goa after COVID-19. fell in love with it. Spent an year figuring out the best places. Now want to help others get the best out of Goa</div>
            </div>
         </div>
       </NavDropdown>
