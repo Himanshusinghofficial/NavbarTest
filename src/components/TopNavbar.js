@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Rating from '@material-ui/lab/Rating';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles({
   root: {
@@ -42,17 +43,21 @@ return (
     <label>please help us improve</label><br/>
         <div class="fields">
           <TextareaAutosize type="text" placeholder="Features you want Anything you liked/disliked" className="username fields input" style={{outline:'none'}}/>
-          <TextareaAutosize type="number" placeholder="Phone(optional)" class="password" style={{outline:'none',padding:'15px 0px 15px 15px'}}/>
+          <TextareaAutosize type="number" placeholder="Phone(optional)" class="password" style={{outline:'none',padding:'15px 0px 15px 0px',textAlign: 'center'}}/>
           <button class="signin-button" style={{outline:'none'}}>Submit</button> 
         </div>
 
       </> : " "}
     </div>
       </NavDropdown>
-      <div style={{color:'white'}}>
-      <div><div>Share videos with fellow users or need help</div><Nav.Link href="#" style={{float: 'right'}}><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover" style={{outline:'none'}}>whatsapp us <i class="fab fa-whatsapp fa-lg"></i></button></Nav.Link>
-      </div>
-      </div>
+      <Grid container>
+        <Grid item xs={7} sm={7}>
+        <div style={{color:'white'}}>Share videos with fellow users or need help</div>
+        </Grid>
+        <Grid item xs={5} sm={5}>
+        <Nav.Link href="#" style={{float: 'right'}}><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover" style={{outline:'none'}}>whatsapp us <i class="fab fa-whatsapp fa-lg"></i></button></Nav.Link>
+        </Grid>
+        </Grid>
       <NavDropdown title="About" id="collasible-nav-dropdown">
            <h5 style={{textAlign:'center'}}>
            <u>About us</u>
