@@ -25,8 +25,8 @@ return (
     </Nav>
     <Nav>
       <NavDropdown title="Feedback" id="collasible-nav-dropdown">
-        <div style={{margin:'0px 20px 0px 20px'}}>
-        <div><b>Please rate your experience</b></div>
+        <div class="login-div" >
+        <div>Please rate your experience</div>
         <div className={classes.root}>
       <Rating
         name="hover-feedback"
@@ -40,22 +40,26 @@ return (
     </div>
     {value > 0 ? <>
     <label>please help us improve</label><br/>
-     <TextareaAutosize aria-label="empty textarea" placeholder="share your feedback" style={{marginLeft:'1px',marginTop:'2px',paddingRight:'20px'}} /><br/>
-     <input type="tel" id="phone" name="phone" placeholder="Phone(optional)" type="number" style={{ marginLeft:'1px'}}/>
-     <Button class="btn my-2 my-sm-0" type="submit" style={{ backgroundColor: '#e33d53', borderColor: 'white', color: 'white', marginLeft:'2px'}}>Submit</Button>
+        <div class="fields">
+          <TextareaAutosize type="text" placeholder="Features you want Anything you liked/disliked" className="username fields input" style={{outline:'none'}}/>
+          <TextareaAutosize type="number" placeholder="Phone(optional)" class="password" style={{outline:'none',padding:'15px'}}/>
+          <button class="signin-button" style={{outline:'none'}}>Submit</button> 
+        </div>
+
       </> : " "}
     </div>
       </NavDropdown>
-      <Nav.Link href="#" target="_blank"><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover">whatsapp us <i class="fab fa-whatsapp"></i></button></Nav.Link>
+      <div style={{color:'white'}}>
+      <div><div>Share videos with fellow users or need help</div><Nav.Link href="#" style={{float: 'right'}}><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover" style={{outline:'none'}}>whatsapp us <i class="fab fa-whatsapp fa-lg"></i></button></Nav.Link>
+      </div>
+      </div>
       <NavDropdown title="About" id="collasible-nav-dropdown">
-      <div className="container" style={{marginTop:'20px'}}>
            <h5 style={{textAlign:'center'}}>
            <u>About us</u>
            </h5>
-           <div class="Details">
+           <div class="login-div">
            <div>Moved to Goa after COVID-19. fell in love with it. Spent an year figuring out the best places. Now want to help others get the best out of Goa</div>
            </div>
-        </div>
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>
