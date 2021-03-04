@@ -42,7 +42,7 @@ return (
     <label>please help us improve</label><br/>
         <div class="fields">
           <TextareaAutosize type="text" placeholder="Features you want Anything you liked/disliked" className="username fields input" style={{outline:'none'}}/>
-          <TextareaAutosize type="number" placeholder="Phone(optional)" class="password" style={{outline:'none',padding:'15px'}}/>
+          <TextareaAutosize type="number" placeholder="Phone(optional)" class="password" style={{outline:'none',padding:'15px 0px 15px 15px'}}/>
           <button class="signin-button" style={{outline:'none'}}>Submit</button> 
         </div>
 
