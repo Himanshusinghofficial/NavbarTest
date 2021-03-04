@@ -25,8 +25,16 @@ return (
     <Nav className="mr-auto">
     </Nav>
     <Nav>
+    <Grid container>
+        <Grid item xs={7} sm={7}>
+        <div style={{color:'white'}}>Feature your videos on our site</div>
+        </Grid>
+        <Grid item xs={5} sm={5}>
+        <Nav.Link href="#" style={{float: 'right'}}><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover" style={{outline:'none'}}>whatsapp us <i class="fab fa-whatsapp fa-lg"></i></button></Nav.Link>
+        </Grid>
+    </Grid>
       <NavDropdown title="Feedback" id="collasible-nav-dropdown">
-        <div class="login-div" >
+        <div class="login-div">
         <div>Please rate your experience</div>
         <div className={classes.root}>
       <Rating
@@ -50,14 +58,6 @@ return (
       </> : " "}
     </div>
       </NavDropdown>
-      <Grid container>
-        <Grid item xs={7} sm={7}>
-        <div style={{color:'white'}}>Share videos with fellow users or need help</div>
-        </Grid>
-        <Grid item xs={5} sm={5}>
-        <Nav.Link href="#" style={{float: 'right'}}><button class="buttoncss neomorphic-shadows neomorphic-shadows-hover" style={{outline:'none'}}>whatsapp us <i class="fab fa-whatsapp fa-lg"></i></button></Nav.Link>
-        </Grid>
-        </Grid>
       <NavDropdown title="About" id="collasible-nav-dropdown">
            <h5 style={{textAlign:'center'}}>
            <u>About us</u>
